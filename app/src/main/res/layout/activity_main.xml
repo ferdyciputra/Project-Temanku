@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.projecttemanku.MainActivity">
+
+    <ImageView
+        android:id="@+id/gambar1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/greenday1"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Tombol Login dan Signup"
+        android:textSize="20sp"
+        android:textStyle="italic|bold" />
+    <Button
+        android:id="@+id/buttonlogin"
+        android:text="login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="29dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginTop="15dp" />
+    <Button
+        android:id="@+id/buttonsignup"
+        android:text="Signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonlogin"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="29dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginTop="15dp" />
+    <TextView
+        android:id="@+id/textview2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GreenDay"
+        android:textStyle="bold"
+        android:layout_below="@+id/gambar1"
+        android:layout_marginTop="15dp"/>
+    <Button
+        android:id="@+id/buttonshare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share"
+        android:layout_below="@+id/textview2"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/black"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:layout_below="@+id/buttonshare"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview2"
+        android:layout_marginTop="35dp"
+        android:layout_toRightOf="@+id/buttonshare"
+        android:layout_marginLeft="100dp"/>
+</RelativeLayout>
